@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>OWL</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <ul class="help-container">
+      <li>Move the cursor in box to rotate eye</li>
+      <li>Hold outside the box for sleep</li>
+      <li>Click anywhere on owl for rage view</li>
+    </ul>
+    <div class="container" onmousemove="mouseMove(event,this)" onmouseleave="mouseOut(event,this)">
+        <div class="owl-body-top"></div>
+        <div class="owl-body-bottom flex-row align-center-center wrap" onclick="angryStart(event)">
+            <div class="feather-container flex-row align-center-center wrap">
+                <div class="body-feather"></div>
+                <div class="body-feather"></div>
+                <div class="body-feather"></div>
+                <div class="body-feather"></div>
+                <div class="body-feather"></div>
+            </div>
+        </div>
+        <div class="owl-eye-outer-border eye-position-left" onclick="angryStart(event)"></div>
+        <div id="eyeLeft" class="eye-blank-area eye-blank-pos-left" onclick="angryStart(event)">
+            <div id="pupilLeft" class="pupil">
+                <div class="shine"></div>
+            </div>
+        </div>
+        <div class="eye-lid-up eye-blank-pos-left" onclick="angryStart(event)"></div>
+        <div class="eye-lid-down eye-blank-pos-left mt85" onclick="angryStart(event)"></div>
+
+        <div class="owl-eye-outer-border eye-position-right" onclick="angryStart(event)"></div>
+        <div id="eyeRight" class="eye-blank-area eye-blank-pos-right" onclick="angryStart(event)">
+            <div id="pupilRight" class="pupil">
+                <div class="shine"></div>
+            </div>
+        </div>
+        <div class="eye-lid-up eye-blank-pos-right" onclick="angryStart(event)"></div>
+        <div class="eye-lid-down eye-blank-pos-right mt85" onclick="angryStart(event)"></div>
+        <div class="wing-left" onclick="angryStart(event)"></div>
+        <div class="wing-right" onclick="angryStart(event)"></div>
+        <div class="peak" onclick="angryStart(event)"></div>
+        <div class="feet-left flex-row align-center-center">
+            <div class="finger"></div>
+            <div class="finger"></div>
+            <div class="finger"></div>
+        </div>
+        <div class="feet-right flex-row align-center-center">
+            <div class="finger"></div>
+            <div class="finger"></div>
+            <div class="finger"></div>
+        </div>
+        <div class="ear pos-ear-left"></div>
+        <div class="ear pos-ear-right"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
